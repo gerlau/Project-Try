@@ -14,10 +14,9 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket"
+  bucket = "very-very-unique-project-try-bucket"
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+    uc = "Project-Try"
   }
 }
