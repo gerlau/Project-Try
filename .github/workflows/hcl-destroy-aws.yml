@@ -35,6 +35,12 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
+      - name: Inspect Terraform State
+        run: terraform state list
+        
+      - name: Refresh Terraform State
+        run: terraform refresh
+
       - name: Terraform Destroy
         run: terraform destroy -auto-approve -input=false
 
