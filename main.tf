@@ -18,6 +18,7 @@ provider "aws" {
   region = "ap-southeast-1"
 }
 
+/*
 resource "aws_s3_bucket" "example" {
   bucket = "very-very-unique-project-try-bucket"
 
@@ -25,3 +26,4 @@ resource "aws_s3_bucket" "example" {
     uc = "Project-Try"
   }
 }
+*/
