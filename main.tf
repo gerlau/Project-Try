@@ -5,6 +5,11 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "s3" {
+    bucket = "proj-try-terraform-state-dev"
+    key = "terraform.tfstate"
+    region = "ap-southeast-1"
+  }
 }
 
 # testing
